@@ -6253,7 +6253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"internal-slot@npm:^1.1.0":
+"internal-slot@npm:1.1.0":
   version: 1.1.0
   resolution: "internal-slot@npm:1.1.0"
   dependencies:
@@ -10113,9 +10113,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zerounbound-ghostnet@workspace:.":
+"zerounbound-mainnet@workspace:.":
   version: 0.0.0-use.local
-  resolution: "zerounbound-ghostnet@workspace:."
+  resolution: "zerounbound-mainnet@workspace:."
   dependencies:
     "@airgap/beacon-sdk": "npm:4.5.2"
     "@babel/core": "npm:7.22.0"

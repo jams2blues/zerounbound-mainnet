@@ -80,7 +80,7 @@
     "last 2 Safari versions"
   ],
   "resolutions": {
-    "internal-slot": "1.1.1",
+    "internal-slot": "1.1.0",
     "@stablelib/ed25519": "1.0.3",
     "@stablelib/nacl": "1.0.4",
     "@stablelib/random": "1.0.2",
