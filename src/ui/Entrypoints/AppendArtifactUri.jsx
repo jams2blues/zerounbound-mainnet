@@ -18,7 +18,7 @@ import PixelConfirmDialog from '../PixelConfirmDialog.jsx';
 import RenderMedia from '../../utils/RenderMedia.jsx';
 import TokenMetaPanel from '../TokenMetaPanel.jsx';
 
-import { sliceHex, SPLIT_SAFE_BYTES as PACKED_SAFE_BYTES } from '../../core/batch.js';
+import { splitPacked, sliceHex, PACKED_SAFE_BYTES } from '../../core/batch.js';
 import { strHash, loadSliceCache, saveSliceCache, clearSliceCache, purgeExpiredSliceCache } from '../../utils/sliceCache.js';
 import { jFetch } from '../../core/net.js';
 import { mimeFromFilename } from '../../constants/mimeTypes.js';
@@ -156,7 +156,7 @@ export default function AppendArtifactUri({
       setEstimate({ feeTez: (feeMutez / 1e6).toFixed(6), storageTez: (storageMutez / 1e6).toFixed(6) });
 
       setSlicesTotal(hexSlices.length);
-      setBatches(await toolkit.splitPacked(flat, PACKED_SAFE_BYTES));
+      setBatches(await splitPacked(toolkit, flat, PACKED_SAFE_BYTES));
 
       saveSliceCache(contractAddress, tokenId, 'artifact', {
         hash, total: hexSlices.length, nextIdx: startIdx, slices: hexSlices
