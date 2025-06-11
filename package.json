@@ -1,5 +1,5 @@
 {
-  "name": "zerounbound-ghostnet",
+  "name": "zerounbound-mainnet",
   "version": "1.4.4",
   "private": true,
   "type": "module",
@@ -80,6 +80,7 @@
     "last 2 Safari versions"
   ],
   "resolutions": {
+    "internal-slot": "1.1.1",
     "@stablelib/ed25519": "1.0.3",
     "@stablelib/nacl": "1.0.4",
     "@stablelib/random": "1.0.2",
